@@ -17,6 +17,13 @@ module Fin where
   open Data.Fin.Properties public
 open Fin public hiding (module Fin) using (Fin; suc; zero)
 
+import Data.Float
+import Data.Float.Properties
+module Float where
+  open Data.Float public
+  open Data.Float.Properties public
+open Float public using (Float)
+
 import Data.Nat
 import Data.Nat.Properties
 module Nat where
